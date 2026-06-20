@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - Nama Perusahaan</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:#fff;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #ddd;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+}
+
+.btn{
+background:#222;
+color:#fff;
+padding:10px 18px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.hero{
+background:#222;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.container{
+width:85%;
+margin:auto;
+padding:50px 0;
+}
+
+.search-box{
+margin-bottom:30px;
+}
+
+.search-box input{
+width:100%;
+padding:15px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.category{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-bottom:30px;
+}
+
+.category button{
+padding:10px 15px;
+border:none;
+background:#ddd;
+border-radius:20px;
+cursor:pointer;
+}
+
+.blog-layout{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:30px;
+}
+
+.blog-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.blog-card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.blog-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.blog-content{
+padding:20px;
+}
+
+.blog-content h3{
+margin-bottom:10px;
+}
+
+.blog-content p{
+margin-bottom:15px;
+line-height:1.6;
+}
+
+.read-more{
+display:inline-block;
+padding:8px 15px;
+background:#222;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.sidebar{
+background:white;
+padding:20px;
+border-radius:10px;
+height:fit-content;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.sidebar h3{
+margin-bottom:15px;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar li{
+margin-bottom:12px;
+padding-bottom:12px;
+border-bottom:1px solid #eee;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.blog-layout{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">LOGO</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Beranda</a></li>
+<li><a href="tentang kami.html">Tentang Kami</a></li>
+<li><a href="layanan.html">Layanan</a></li>
+<li><a href="portfolio.html">Portofolio</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="kontak.html">Kontak</a></li>
+</ul>
+</nav>
+
+<a href="hubungi kami.html" class="btn">
+    Hubungi Kami
+</a>
+onclick="window.location.href='hubungi-kami.html'">
+Hubungi Kami
+</button>
+
+</header>
+
+<section class="hero">
+<h1>Blog Kami</h1>
+<p>Artikel, berita, dan tips seputar teknologi digital.</p>
+</section>
+
+<section class="container">
+
+<div class="search-box">
+<input type="text"
+id="searchInput"
+placeholder="Cari artikel...">
+</div>
+
+<div class="category">
+<button>Semua</button>
+<button>Website</button>
+<button>UI/UX</button>
+<button>Teknologi</button>
+<button>Digital Marketing</button>
+</div>
+
+<div class="blog-layout">
+
+<div class="blog-grid" id="blogGrid">
+
+<div class="blog-card">
+<img src="https://picsum.photos/500/300?1">
+<div class="blog-content">
+<h3>Mengapa Website Penting untuk Bisnis?</h3>
+<p>Pelajari manfaat website dalam meningkatkan kredibilitas dan penjualan bisnis.</p>
+<a href="#" class="read-more">Baca Selengkapnya</a>
+</div>
+</div>
+
+<div class="blog-card">
+<img src="https://picsum.photos/500/300?2">
+<div class="blog-content">
+<h3>Tren UI/UX Tahun 2025</h3>
+<p>Desain modern yang meningkatkan pengalaman pengguna.</p>
+<a href="#" class="read-more">Baca Selengkapnya</a>
+</div>
+</div>
+
+<div class="blog-card">
+<img src="https://picsum.photos/500/300?3">
+<div class="blog-content">
+<h3>Tips SEO untuk Website Baru</h3>
+<p>Cara meningkatkan peringkat website di mesin pencari.</p>
+<a href="#" class="read-more">Baca Selengkapnya</a>
+</div>
+</div>
+
+<div class="blog-card">
+<img src="https://picsum.photos/500/300?4">
+<div class="blog-content">
+<h3>Peran Teknologi dalam Bisnis Modern</h3>
+<p>Teknologi membantu efisiensi dan produktivitas perusahaan.</p>
+<a href="#" class="read-more">Baca Selengkapnya</a>
+</div>
+</div>
+
+</div>
+
+<div class="sidebar">
+
+<h3>Artikel Terbaru</h3>
+
+<ul>
+<li>✔ Strategi Digital Marketing 2025</li>
+<li>✔ Cara Membuat Landing Page</li>
+<li>✔ Pentingnya Branding Digital</li>
+<li>✔ Framework JavaScript Terpopuler</li>
+<li>✔ Tips Keamanan Website</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2025 Nama Perusahaan | All Rights Reserved
+</footer>
+
+<script>
+
+const searchInput =
+document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function(){
+
+let filter =
+this.value.toLowerCase();
+
+let cards =
+document.querySelectorAll(".blog-card");
+
+cards.forEach(card => {
+
+let title =
+card.querySelector("h3")
+.textContent.toLowerCase();
+
+if(title.includes(filter)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

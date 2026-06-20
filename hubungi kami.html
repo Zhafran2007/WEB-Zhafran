@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hubungi Kami</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:#fff;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #ddd;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+}
+
+.hero{
+background:#222;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.container{
+width:85%;
+margin:auto;
+padding:60px 0;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.card h2{
+margin-bottom:20px;
+}
+
+.info{
+margin-bottom:20px;
+}
+
+.info h4{
+margin-bottom:5px;
+}
+
+input,
+textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:6px;
+}
+
+textarea{
+height:120px;
+resize:none;
+}
+
+.btn{
+background:#222;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#444;
+}
+
+.social{
+display:flex;
+gap:10px;
+margin-top:15px;
+}
+
+.social a{
+padding:10px 15px;
+background:#eee;
+border-radius:5px;
+text-decoration:none;
+color:#333;
+}
+
+.faq{
+margin-top:50px;
+}
+
+.faq-item{
+background:white;
+padding:20px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.map{
+margin-top:50px;
+}
+
+.map iframe{
+width:100%;
+height:400px;
+border:none;
+border-radius:10px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">LOGO</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Beranda</a></li>
+<li><a href="tentang kami.html">Tentang Kami</a></li>
+<li><a href="layanan.html">Layanan</a></li>
+<li><a href="portfolio.html">Portofolio</a></li>
+<li><a href="kontak.html">Kontak</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+<h1>Hubungi Kami</h1>
+<p>Kami siap membantu kebutuhan website dan solusi digital Anda.</p>
+</section>
+
+<section class="container">
+
+<div class="contact-grid">
+
+<div class="card">
+
+<h2>Informasi Kontak</h2>
+
+<div class="info">
+<h4>📍 Alamat</h4>
+<p>Banda Aceh, Indonesia</p>
+</div>
+
+<div class="info">
+<h4>📞 Telepon</h4>
+<p>+62 812 3456 7890</p>
+</div>
+
+<div class="info">
+<h4>✉ Email</h4>
+<p>info@DZ Fotogarafer.com</p>
+</div>
+
+<div class="info">
+<h4>🕒 Jam Kerja</h4>
+<p>Senin - Jumat, 08:00 - 17:00 WIB</p>
+</div>
+
+<a href="https://wa.me/6281234567890">
+<button class="btn">
+Chat WhatsApp
+</button>
+</a>
+
+<div class="social">
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
+<a href="#">LinkedIn</a>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Kirim Pesan</h2>
+
+<form id="contactForm">
+
+<input type="text"
+placeholder="Nama Lengkap"
+required>
+
+<input type="email"
+placeholder="Email"
+required>
+
+<input type="text"
+placeholder="Subjek"
+required>
+
+<textarea
+placeholder="Pesan Anda..."
+required></textarea>
+
+<button type="submit" class="btn">
+Kirim Pesan
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="faq">
+
+<h2 style="margin-bottom:20px;">
+Pertanyaan Umum
+</h2>
+
+<div class="faq-item">
+<h3>Berapa lama hasil foto nya diperoleh?</h3>
+<p>
+Rata-rata 1-3 hari tergantung kompleksitas proyek.
+</p>
+</div>
+
+<div class="faq-item">
+<h3>Apakah menerima revisi?</h3>
+<p>
+
+Ya, kami menerima revisi sesuai kepuasan.
+</p>
+</div>
+
+<div class="faq-item">
+<h3></h3>
+<p>    .
+</p>
+</div>
+
+</div>
+
+<div class="map">
+
+<h2 style="margin-bottom:20px;">
+Lokasi Kami
+</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=Banda%20Aceh&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+</section>
+
+<footer>
+© 2025 Nama Perusahaan | All Rights Reserved
+</footer>
+
+<script>
+
+document
+.getElementById("contactForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert(
+"Terima kasih, pesan Anda berhasil dikirim!"
+);
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
